@@ -1,6 +1,8 @@
-const aboutMe = function (name, weight){
-    prompt('what is your name');
-    return alert(`My name is ${name}, I am weighing ${weight}lbs`);
+let name = parseInt(prompt('enter your name'));
+let weight = parseInt(prompt('enter your weight(kg)'));
 
+function aboutMe(name, weight){
+    let kilo = weight * 2.2
+    alert(`${kilo}lbs`);
 }
-console.log(aboutMe('Adeola', 35 * 2.2));
+aboutMe(name, weight);
